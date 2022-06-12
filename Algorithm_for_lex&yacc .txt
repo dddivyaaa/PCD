@@ -1,0 +1,24 @@
+1)Start the Program.
+2) Define the Rules, user-defined subroutines and definitions.
+ {definitions}
+ %%
+ {rules}
+ %%
+ {user-defined subroutines}
+3) yyparse() – implies parsing status
+ if( yyparse()==0 )
+ Parsing successful
+ elseif( yyparse()==1 )
+ Parsing failed due to invalid input
+ else( yyparse()==2 )
+ Parsing failed due to memory exhaustion
+4) yylex() – implies the entry point for the lex and reads input to generate tokens.
+ if( yylex()==0)
+ End of input stream
+5) yyerror() – it is called when YACC encounters invalid syntax.
+6) yywrap() – implies the end of file.
+ if( yywrap()==1 )
+ End of file
+7) yylval – values associated with the token are returned by lex in this variable.
+8) yytext – points to first character of the return token.
+6) Stop the Program. 
