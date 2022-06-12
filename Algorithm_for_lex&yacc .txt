@@ -20,5 +20,5 @@
  if( yywrap()==1 )
  End of file
 7) yylval – values associated with the token are returned by lex in this variable.
-8) yytext – points to first character of the return token.
-6) Stop the Program. 
+8) yytext – points to first character of the return token
+
